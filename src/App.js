@@ -2,10 +2,10 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import Home from "./home";
-import Page1 from "./page1";
-import Page2 from "./page2";
-import Page3 from "./page3";
+import Home from "./pages/home";
+import Page1 from "./pages/page1";
+import Page2 from "./pages/page2";
+import Page3 from "./pages/page3";
 
 function App() {
   return (
