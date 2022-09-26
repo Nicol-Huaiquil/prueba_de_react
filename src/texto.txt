@@ -1,0 +1,11 @@
+<Router exact path="/home" component={() => <Profile authorized={false} /> }/>
+<Router exact path="/page1" component={() => <Profile authorized={false} /> }/>
+<Router exact path="/page2" component={() => <Profile authorized={false} /> }/>
+<Router exact path="/page3" component={page3} />
+
+
+function Home({ authorized }){
+
+    if (!authorized){
+        return <Redirect to="/page3" />;
+    }
